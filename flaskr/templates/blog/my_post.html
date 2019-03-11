@@ -24,9 +24,11 @@
       </header>
       <p class="body">{{ post['body'] }}</p>
     </article>
-    {% if not loop.last %}
-      <hr>
-    {% endif %}
+      {% if not loop.last %}
+        <hr>
+      {% endif %}
+    {% else %}
+      <p><center>You have no post yet :(</center></p>
     {% endif %}
   {% endfor %}
 {% endblock %}
