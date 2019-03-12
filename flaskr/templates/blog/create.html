@@ -4,6 +4,10 @@
   <h1>{% block title %}New Post{% endblock %}</h1>
 {% endblock %}
 
+{% block my_post %}
+    <li><a href="{{ url_for('blog.index') }}">Main Page</a></li>
+{% endblock %}
+
 {% block content %}
   <form method="post">
     <label for="title">Title</label>
